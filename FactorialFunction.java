@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class FactorialFunction {
+    static int factorial(int n){
+        int fact = 1;
+        for (int i = 1; i <= n; i++){
+            fact = fact * i;
+        }
+        return fact;
+    }
+    public static void main(String[] args){
+        Scanner sc =  new Scanner(System.in);
+        System.out.println("Enter A Number: ");
+        int num = sc.nextInt();
+
+        int result = factorial(num);
+        System.out.println("Factorial is " + result);
+}
+}
